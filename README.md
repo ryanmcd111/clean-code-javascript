@@ -107,7 +107,7 @@ setTimeout(blastOff, MILLISECONDS_PER_DAY);
 
 **[⬆ back to top](#table-of-contents)**
 
-### Use explanatory variables
+### Use explanatory variables as function arguments
 
 **Bad:**
 
