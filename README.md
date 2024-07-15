@@ -974,6 +974,34 @@ function combine(val1, val2) {
 
 **[⬆ back to top](#table-of-contents)**
 
+### Strict Equality & Loose Equality (part 3)
+
+Use non-strict comparison operators, and then comparing across different types. The bad example did not provide expected results for using non-strict comparison operators (==). It only compare between values, but not with identical. So, To get our expected output we have to use ‘===’ instead of ‘==’, for instance.
+
+**Bad:**
+
+```javascript
+1 == “1”; // true
+0 == false; // true
+null == undefined; // true
+[] == false // true
+1 == true // true
+"" == 0 // true
+```
+
+**Good:**
+
+```javascript
+1 === “1”; // false
+0 === false; // false
+null === undefined; // false
+[] === false // false
+1 === true // false
+"" === 0 // false
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ### Don't over-optimize
 
 Modern browsers do a lot of optimization under-the-hood at runtime. A lot of
