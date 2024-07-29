@@ -75,6 +75,8 @@ getCustomerRecord();
 
 ```javascript
 getUser();
+getClient();
+getCustomer();
 ```
 
 **[⬆ back to top](#table-of-contents)**
